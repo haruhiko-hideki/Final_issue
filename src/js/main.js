@@ -79,16 +79,29 @@ $(function() {
 
 
 $(document).ready(function() {
-    $('#table__people').DataTable( {
+    $('#table__people').DataTable({
         "ajax": {
             "url": "data/data.json",
             "dataSrc": ""
         },
         "columns": [
-            { "data": "Name" },
-            { "data": "Street Address" },
-            { "data": "City" },
-            { "data": "Postal / Zip" }
+            {"data": "Name"},
+            {"data": "Street Address"},
+            {"data": "City"},
+            {"data": "Postal / Zip"}
         ]
-    } );
-} );
+    });
+    var input_email = document.getElementById("Subscribe-form");
+    var form_info = document.getElementById("js-register-form");
+
+    if (form_info) {
+        form_info.addEventListener("submit", function () {
+            toastr.info('Message Send!!');
+            event.preventDefault();
+        })
+    }
+    input_email.addEventListener("submit", function () {
+        toastr.info('The information was sand to your email!!');
+        event.preventDefault();
+    });
+});

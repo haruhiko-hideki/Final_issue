@@ -3,8 +3,8 @@ var gulp = require("gulp"),
     nano = require("gulp-cssnano"),
     browserSync = require("browser-sync").create(),
     concat = require("gulp-concat"),
-    uglify = require("gulp-uglify");
-
+    uglify = require("gulp-uglify"),
+    addSrc = require("gulp-add-src");
 
 
 gulp.task("html", function(){
@@ -48,7 +48,6 @@ gulp.task("vendor-css", function(){
     ])
         .pipe(nano())
         .pipe(concat("vendor.min.css"))
-        .pipe(uglify())
         .pipe(gulp.dest("dist/css"));
 });
 gulp.task("js-vendor", function(){
@@ -65,7 +64,6 @@ gulp.task("js-vendor", function(){
     ])
         .pipe(addSrc.prepend("node_modules/jquery/dist/jquery.js"))
         .pipe(concat("vendor.min.js"))
-        .pipe(uglify())
         .pipe(gulp.dest("dist/js"))
 });
 gulp.task("fonts", function(){
