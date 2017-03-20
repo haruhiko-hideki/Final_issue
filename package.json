@@ -1,0 +1,37 @@
+{
+  "name": "Smallapps",
+  "version": "1.0.1",
+  "description": "Smallapps website",
+  "main": "index.js",
+  "scripts": {
+    "test": "welcome to Smallapps. It's my final issue"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haruhiko-hideki/Final_issue.git"
+  },
+  "keywords": [
+    "Smallapps"
+  ],
+  "author": "Andrii Bakan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haruhiko-hideki/Final_issue/issues"
+  },
+  "homepage": "https://github.com/haruhiko-hideki/Final_issue#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-add-src": "^0.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-less": "^3.3.0",
+    "gulp-uglify": "^2.1.0",
+    "jquery-validation": "^1.16.0"
+  },
+  "dependencies": {
+    "toastr": "^2.1.2",
+    "bootstrap": "",
+    "jquery": ""
+  }
+}

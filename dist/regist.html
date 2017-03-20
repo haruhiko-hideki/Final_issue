@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+    <title>Document</title>
+    <style type="text/css">
+        #deceased{
+            background-color:#FFF3F5;
+            padding-top:10px;
+            margin-bottom:10px;
+        }
+        .remove_field{
+            float:right;
+            cursor:pointer;
+            position : absolute;
+        }
+        .remove_field:hover{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo-container">
+            <a href="#" class="Logo">Smallapps</a>
+        </div>
+        <div class="nav-container">
+
+            <button type="button"
+                    class="navbar-toggle collapsed nav-container__toggle-btn"
+                    data-toggle="collapse"
+                    data-target="#main-menu">
+
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-new">
+                    <li class="Menu-item"><a href="index.html" class="Menu-link link-first">Home</a></li>
+                    <li class="Menu-item"><a href="#" class="Menu-link">Features</a></li>
+                    <li class="Menu-item"><a  href="#" class="Menu-link">Screenshot</a></li>
+                    <li class="Menu-item"><a href="#" class="Menu-link">Gallery</a></li>
+                </ul >
+                <ul class="nav navbar-nav navbar-nav-2 navbar-new">
+                    <li class="Menu-item"><a href="#" class="Menu-link">
+                        <img src="img/header/phone.png" alt="" >
+                        800-123-456</a></li>
+                    <li class="Menu-item"><a href="#" class="Menu-link ">
+                        <img src="img/header/message.png" alt="">
+                        smallaps@gmail.com</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="banner-container">
+    <div class="container">
+        <section class="data-section">
+            <header class="SectionHeader is-main">
+                <h1 class="SectionHeader-title">
+                    <span class="SectionHeader-text">Perfect app landing page</span><br>
+                    <span class="SectionHeader-desc">Duis bibendum diam</span>
+                </h1>
+                <p class="SectionHeader-cont">Donec elementum mollis magna id aliquet. <br>   Etiam eleifend urna eget sem
+                    sagittis feugiat. Pellentesque habitant <br> morbi tristique senectus et
+                    netus et malesuada fames ac turpis egestas.</p>
+
+            </header>
+
+        </section>
+        <a href="#" class="download-btn">DOWNLOAD</a>
+    </div>
+</div>
+
+
+<div class="container">
+
+<div class="panel panel-primary" style="margin:20px;">
+        <div class="panel-heading">
+            <h3 class="panel-title">Registration Form</h3>
+        </div>
+        <div class="panel-body">
+            <form  action="#" method="post" class="form" id="js-register-form">
+                <div class="col-md-12 col-sm-12">
+                    <div class="form-group col-md-6 col-sm-6">
+                        <label for="firstname">firstname*</label>
+                        <input type="text" name="form_name" class="form-control input-sm" id="firstname" placeholder="firstname*">
+                    </div>
+                    <div class="form-group col-md-6 col-sm-6">
+                        <label for="email">Email*</label>
+                        <input type="email" name="form_email" class="form-control input-sm" id="email" placeholder="Email*">
+                    </div>
+
+                    <div class="form-group col-md-6 col-sm-6">
+                        <label for="mobile">Mobile*</label>
+                        <input type="text" name="form_tel" class="form-control input-sm" id="mobile" placeholder="Mobile*">
+                    </div>
+
+                    <div class="form-group col-md-6 col-sm-6">
+                        <label for="address">Address*</label>
+                        <textarea class="form-control input-sm" id="address" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group col-md-6 col-sm-6">
+                        <label for="password">password*</label>
+                        <input type="text" name="form_pswd1" class="form-control input-sm" id="password" placeholder="password">
+                    </div>
+
+                    <div class="form-group col-md-6 col-sm-6">
+                        <label for="state">State*</label>
+                        <input type="text" name="form_state" class="form-control input-sm" id="state" placeholder="State*">
+                    </div>
+
+                    <div class="form-group col-md-6 col-sm-6">
+                        <label for="country">Country*</label>
+                        <input type="text" class="form-control input-sm" id="country" placeholder="Country*">
+                    </div>
+
+                    <div class="form-group col-md-6 col-sm-6">
+                        <label for="pincode">Pincode</label>
+                        <input type="text" class="form-control input-sm" id="pincode" placeholder="Pincode<">
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="form-group col-md-3 col-sm-3 pull-right" >
+                        <button type="submit" class="btn btn_send_message">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+</div>
+
+</div>
+<div class="container-fluid">
+    <div class="row" id = "iframe">
+        <div class="col-xs-12 iframe_container">
+            <iframe class = "iframe_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2588.4889421528833!2d25.590465314973986!3d49.550796959658314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473036b4797fbc9b%3A0xa1d25428e9e250fe!2z0LLRg9C70LjRhtGPINCg0YPRgdGM0LrQsCwg0KLQtdGA0L3QvtC_0ZbQu9GMLCDQotC10YDQvdC-0L_RltC70YzRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1suk!2sua!4v1474652737670" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+<div class="row">
+    <div  class="col-md-12">
+    <table id="table__people" class="table_people">
+
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Street Address</th>
+                <th>City</th>
+                <th>Postal / Zip</th>
+            </tr>
+            </thead>
+
+        </table>
+    </div>
+</div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <header class="Footer-header">
+                <span  class="Footer-text">
+                Say Hi, Get in Touch
+                </span>
+        </header>
+        <img src="img/footer/ftgnx.png" alt="" class="center-block" width="40%">
+
+        <ul  class="Footers-list" style="text-align: center; padding-bottom: 40px; padding-top: 40px">
+            <li class="Footers-item"><a href="regist.html" class="Footers-link ">Contact</a></li>
+            <li class="Footers-item"><a href="#" class="Footers-link">Twetter</a></li>
+            <li class="Footers-item"><a  href="#" class="Footers-link">Press</a></li>
+            <li class="Footers-item"><a href="#" class="Footers-link">Support</a></li>
+            <li class="Footers-item"><a href="#" class="Footers-link">Developers</a></li>
+            <li class="Footers-item"><a href="#" class="Footers-link">Privacy</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script src="js/vendor.min.js"></script>
+
+
+</body>
+</html>
