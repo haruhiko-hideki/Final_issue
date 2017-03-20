@@ -50,8 +50,11 @@ $(function() {
                 email: "Your imail is incorrect"
             }
         },
-        focusCleanup: true,
-        focusInvalid: false
+        submitHandler: function () {
+            toastr.success('We got your order');
+            $('#js-register-form').get(0).reset();
+            return false;
+        }
 
     });
 
@@ -71,8 +74,11 @@ $(function() {
                 email: "Your imail is incorrect"
             }
         },
-        focusCleanup: true,
-        focusInvalid: false
+        submitHandler: function () {
+            toastr.success('We got your order');
+            $('#Subscribe-form').get(0).reset();
+            return false;
+        }
     });
 });
 

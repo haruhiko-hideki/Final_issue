@@ -59,6 +59,7 @@ gulp.task("js-vendor", function(){
         "node_modules/jquery-validation/dist/jquery.validate.js",
         "node_modules/jquery-validation/dist/additional-methods.js",
         "node_modules/toastr/build/toastr.min.js",
+        "node_modules/toastr/toastr.js",
         "node_modules/datatables.net/js/jquery.dataTables.js",
         "src/js/main.js"
     ])
