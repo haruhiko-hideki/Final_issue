@@ -3,8 +3,8 @@ var gulp = require("gulp"),
     nano = require("gulp-cssnano"),
     browserSync = require("browser-sync").create(),
     concat = require("gulp-concat"),
-    uglify = require("gulp-uglify"),
-    addSrc = require("gulp-add-src");
+    uglify = require("gulp-uglify");
+
 
 
 gulp.task("html", function(){
@@ -48,6 +48,7 @@ gulp.task("vendor-css", function(){
     ])
         .pipe(nano())
         .pipe(concat("vendor.min.css"))
+        .pipe(uglify())
         .pipe(gulp.dest("dist/css"));
 });
 gulp.task("js-vendor", function(){
