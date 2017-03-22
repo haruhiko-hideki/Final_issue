@@ -30,8 +30,9 @@
     "jquery-validation": "^1.16.0"
   },
   "dependencies": {
-    "toastr": "^2.1.2",
     "bootstrap": "",
-    "jquery": ""
+    "datatables.net": "^1.10.13",
+    "jquery": "",
+    "toastr": "^2.1.2"
   }
 }

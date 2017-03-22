@@ -61,24 +61,23 @@ $(function() {
 });
 $(function() {
 
-    $("#Subscribe-form").validate({
+    $("#Subscribe").validate({
         rules: {
-            form_email: {
+            email: {
                 required: true,
                 email: true
             }
         },
         messages: {
-            form_email: {
+            email: {
                 required: "Field is required",
                 email: "Your imail is incorrect"
             }
         },
 
-
         submitHandler: function () {
             toastr.success('We got your order');
-            $('#Subscribe-form').get(0).reset();
+            $('#Subscribe').get(0).reset();
             return false;
         }
     });
